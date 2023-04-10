@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    padding: 50px;
+    background: #000;
+}
+section h2{
+    font-size: 2.5em;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+section p{
+    font-size: 1.5em;
+    color:#fff;
+}

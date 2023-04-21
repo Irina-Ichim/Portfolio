@@ -1,36 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 body {
-    margin: 0;
-    padding: 0;
+   background: #1f242d;
     height: 100vh;
-    background-color: #fff;
-  }
-  
-  
-section{
-    padding: 50px;
-    background: #000;
-}
-section h2{
-    font-size: 2.5em;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-}
-section p{
-    font-size: 1.5em;
-    color:#fff;
+    font-family: 'Playfair Display', serif;
 }
 ::-webkit-scrollbar{
     width: 100%;
 }
 #scrollPath{
-    background: rgba(30, 5, 5, 0.925);
     position: fixed;
     top: 0;
     right: 0;
@@ -73,4 +54,16 @@ section p{
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(10px);
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }

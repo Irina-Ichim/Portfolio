@@ -143,7 +143,14 @@ body {
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
-}
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25), 0 20px 20px #de43ba;
+    position: relative;
+  }
+  
+  
+  
+
+
 .social-media a {
     display: inline-flex;
     justify-content: center;

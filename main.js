@@ -14,7 +14,7 @@
   });
 
   let typed = new Typed(".multiple-text", {
-    strings: ["Frontend Developer", "YouTuber", "Blogger"],
+    strings: ["Frontend Developer", "WordPress", "SEO y SEM"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

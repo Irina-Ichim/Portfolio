@@ -11,32 +11,24 @@
     <link rel = "stylesheet" href="contacto.css">
 </head>
 <body>
-    <div class="box">
-        <span class="borderline"></span>
-        <form>
-            <h2>Registrar</h2>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span>Usuario</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="contraseña" required="contraseña">
-                <span>Contraseña</span>
-                <i></i>
-            </div>
-            <div class="links">
-                <a href="#">Contraseña olvidada</a>
-                <a href="#">Inscribirse</a>
-            </div>
-            <input type="submit" value="Acceso">
-
-
-
+    <section class="contact" id="contact">
+        <h2 class="heading">¡Contacta <span>Conmigo!</span></h2>
+      <form action="procesar_formulario.php" method="POST" onsubmit="return validarFormulario()">
+                <div class="input-box">
+                    <input type="text" id="nombre" placeholder="Nombre Completo" required/>
+                    <input type="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                </div>
+                <div class="input-box">
+                    <input type="number" id="telefono" placeholder="Teléfono de contacto" />
+                    <input type="text" id="asunto" placeholder="Asunto" />
+                </div>
+                <textarea id="mensaje" name="mensaje" cols="50" rows="10" placeholder="Tu mensaje"></textarea>
+                <div id="mensaje-error" class="error"></div>
+                <button type="submit" class="button">Enviar Mensaje</button>
         </form>
+    </section>
+    
 
-
-
-    </div>
+<script src="formulario.js"></script>
 </body>
 </html>

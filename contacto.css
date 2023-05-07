@@ -1,185 +1,133 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #23242a;
-}
-.box{
-    position: relative;
-    width:380px;
-    height:420px;
-    background: #1c1c1c;
-    border-radius: 8px;
+body {
+    background: #1f242d;
+    color: #fff;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
     overflow: hidden;
-}
-.box::before{
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width:380px;
-    height:420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
-    animation: animate 6s linear infinite;
-    z-index: 1;
-    transform-origin: bottom right;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 
 }
-.box::after{
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width:380px;
-    height:420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
-    animation: animate 6s linear infinite;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation-delay: -3s;
-
+.contact h2.heading{
+    margin-bottom: 10rem;
+    font-size: 2rem;
 }
-.borderline{
-    position: absolute;
-    top:0;
-    inset: 0;
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+span{
+    color: #de43ba;
 }
-.borderline::before{
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width:380px;
-    height:420px;
-    background: linear-gradient(0deg, transparent, transparent, #de43ba, #de43ba, #de43ba);
-    animation: animate 6s linear infinite;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation-delay: -1.5s;
-}
-.borderline::after{
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width:380px;
-    height:420px;
-    background: linear-gradient(0deg, transparent, transparent, #de43ba, #de43ba, #de43ba);
-    animation: animate 6s linear infinite;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation-delay: -4.5s;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-.box form{
-    position:absolute;
-    inset:4px;
-    background: #222;
-    padding: 50px 40px;
-    border-radius: 8px;
-    z-index:2;
+.contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.box form h2{
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1em;
-}
-.box form .inputBox{
-    position: relative;
-    width: 300px;
-    margin-top: 35px;
-    
-}
-.box form .inputBox input{
-    position: relative;
-    width: 100% ;
-    padding: 20px 10px 10px;
-    background: transparent;
-    outline:none;
-    border: none;
-    box-shadow: none;
-    color:#23242a;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 10;
-}
-.box form .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 20px 0px 10px;
-    pointer-events: none;
-    color: #8f8f8f;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
+  
 
-}
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span {
-    color: #fff;
-    font-size: 0.75em;
-    transform: translateY(-34px);
-
-}
-.box form .inputBox i{
-   position: absolute; 
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 2px;
-   background: #fff;
-   border-radius: 4px;
-   overflow: hidden;
-   transition: 0.5s;
-   pointer-events: none;
-
-}
-.box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i{
-    height: 44px;
-}
-.box form .links{
+.contact form .input-box{
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.box form .links a{
-    margin: 10px 0;
-    font-size: 0.75em;
-    color:#8f8f8f;
-    text-decoration: none;
 
+.contact form .input-box input,
+.contact form textarea {
+    font-size: 1.2rem;
+    color:#fff;
+    background: #292f3a;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    position: relative;
+    border: 2px solid #292f3a;
 }
-.box form  .links a:hover
-.box form .links a:nth-child(2){
-    color: #fff;
+
+.contact form .input-box input::before,
+.contact form textarea::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #45f3ff, #ff2770);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .4s ease-in-out;
 }
-.box form input[type="submit"] {
-    border: none;
+
+.contact form .input-box input:focus::before,
+.contact form textarea:focus::before {
+    transform: scaleX(1);
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    border-color: #de43ba;
+    box-shadow: 0 0 10px #de43ba;
     outline: none;
-    padding: 9px 25px;
-    background: #fff;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius: 4px;
-    font-weight: 600;
-    width: 100px;
-    margin-top: 10px;
 }
+
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+
+.contact form button {
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+    background: linear-gradient(90deg, #de43ba, #f441a5 30%,#6b0554  60%, #de43ba);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact form button:hover {
+    background-size: 400%;
+    color: #de43ba;
+    animation: gradient 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  .error {
+    background-color: #1f242d;
+    color: #de43ba;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+  
+  
+  
+  
+ 

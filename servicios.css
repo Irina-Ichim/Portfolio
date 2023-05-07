@@ -8,13 +8,14 @@ body {
    color: #fff;
     height: 100vh;
     font-family: 'Playfair Display', serif;
+    overflow: hidden;
+   padding: 0 2rem;
 }
 .services h2{
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+   margin-bottom: 5rem;
     font-size: 50px;
-    align-items: center;
-    /*display: flex;*/
-    /*justify-content: center;*/
+    text-align: center;
   
 }
 span{
@@ -24,16 +25,16 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*flex-wrap: wrap;*/
-   /* gap: 2px;*/
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 .services-container .services-box{
     flex: 1 1 20rem;
     background: #242b38;
-    padding: 2rem 2rem 3rem;
-    border-radius: 2rem;
+    padding: 3rem 3rem 4rem;
+    border-radius: 3rem;
     text-align: center;
-    border: .2rem solid #242b38 ;
+    border: .3rem solid #242b38 ;
 }
 .services-container .services-box:hover {
     border-color: #de43ba;

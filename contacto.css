@@ -16,8 +16,9 @@ body {
 
 }
 .contact h2.heading{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     font-size: 2rem;
+    margin-top: 5rem;
 }
 .contact form {
     max-width: 70rem;

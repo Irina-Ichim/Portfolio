@@ -9,9 +9,11 @@ body {
     height: 100vh;
     font-family: 'Playfair Display', serif;
     display: flex;
+    overflow: hidden;
 }
 
 .sobre-mi{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,19 +22,15 @@ body {
     
 }
 
-/*.about-img {
-    flex: 1;
-}
-
-.about-content {
-    flex: 1; 
-    text-align: right; 
-}*/
 
 .about-img img{
     width: 30vw;
     border-radius: 50%;
     margin-left: 150px;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25), 0 20px 20px #de43ba;
+    position: relative;
 }
 .heading{
     text-align: center;
@@ -40,13 +38,12 @@ body {
 
 }
 .about-content h2{
-    text-align: left;
+    text-align:start;
     line-height: 1.2;
-}
-.about-content h3{
-    font-size: 2.6rem;
+    font-size: 40px;
+    margin-left: 13px;
 }
 .about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    font-size: 1.1rem;
+    margin: 2rem 1rem 3rem;
 }

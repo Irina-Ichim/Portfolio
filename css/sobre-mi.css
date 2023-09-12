@@ -24,7 +24,7 @@ body {
 
 
 .about-img img{
-    width: 30vw;
+    width: 25vw;
     border-radius: 50%;
     margin-left: 150px;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;

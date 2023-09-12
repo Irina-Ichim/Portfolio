@@ -118,7 +118,7 @@ body {
     max-width: 600px;
 }
 .inicio-contenido h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -133,7 +133,7 @@ body {
     color: #de43ba;
 }
 .inicio-contenido h1 {
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -148,7 +148,7 @@ body {
     text-align:justify;
 }
 .inicio-img img{
-    max-width: 450px;
+    max-width: 370px;
     border-radius: 50%;
     margin-right: -20px;
     opacity: 0;
@@ -157,12 +157,7 @@ body {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25), 0 20px 20px #de43ba;
     position: relative;
   }
-  
-  
-  
-
-
-.social-media a {
+  .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;

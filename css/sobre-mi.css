@@ -47,3 +47,33 @@ body {
     font-size: 1.1rem;
     margin: 2rem 1rem 3rem;
 }
+@media screen and (max-width: 768px) {
+    .sobre-mi {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .about-img img {
+        width: 70%; 
+        margin: 20px 0; 
+    }
+
+    .about-content {
+        padding: 20px; 
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .about-content h2 {
+        text-align: center; 
+        margin-left: 0; 
+    }
+
+    .about-content p {
+        font-size: 1rem; 
+        margin: 1rem 0; 
+    }
+}

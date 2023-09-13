@@ -256,3 +256,21 @@ body {
         transform: translateY(0);
     }
 }
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 20px; 
+    }
+
+}
+
+
+

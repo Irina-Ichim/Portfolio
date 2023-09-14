@@ -1,0 +1,77 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    overflow: hidden;
+}
+
+.sobre-mi {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Añade espacio entre los elementos */
+    align-items: center; /* Centra verticalmente */
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.galeria3d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 45%;
+    padding: 20px;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keyword {
+    background: rgba(222, 67, 186, 0.5);
+    border: 1px solid #de43ba;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.heading {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* Estilos específicos para la galería 3D */
+.keywords {
+    perspective: 1000px;
+}
+
+.keyword {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.3s ease;
+}
+
+.keywords:hover .keyword {
+    transform: rotateY(360deg);
+}
+
+

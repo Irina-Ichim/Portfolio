@@ -5,163 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería 3D</title>
     <style>
-        body { margin: 0; overflow: hidden; }
+        body {
+            margin: 0;
+           overflow: hidden;
+            display: flex;
+        }
+
+        .scene-container {
+            flex: 1;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 20px;
+            background: #de43ba;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Estilos para las palabras en la esfera */
+       /* .label {
+            position: absolute;
+            background: rgba(222, 67, 186, 0.5);
+            border: 1px solid #de43ba;
+            color:white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }*/
     </style>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script>
-        // Configuración básica de la escena
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+    <div class="scene-container">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+        <script>
+            // Configuración básica de la escena
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth / 2, window.innerHeight);
+            document.querySelector('.scene-container').appendChild(renderer.domElement);
 
-        // Crear una esfera para la galería 3D
-        const geometry = new THREE.SphereGeometry(5, 42, 42); // Reduje el tamaño de la esfera
-        const material = new THREE.MeshBasicMaterial({ color: 0x0088ff, wireframe: true });
-        const sphere = new THREE.Mesh(geometry, material);
-        scene.add(sphere);
+            // Crear una esfera para la galería 3D
+            const geometry = new THREE.SphereGeometry(5, 32, 32);
+            const material = new THREE.MeshBasicMaterial({ color: 0x0088ff, wireframe: true });
+            const sphere = new THREE.Mesh(geometry, material);
+            scene.add(sphere);
 
-        // Crear un objeto de texto 3D usando la fuente predeterminada
-        const textOptions = {
-            size: 0.8, // Tamaño del texto
-            height: 0.01, // Grosor del texto
-        };
+            // Crear un objeto de texto 3D usando la fuente predeterminada
+            const textOptions = {
+                size: 0.6,
+                height: 0.01, // Ajusta la altura para que las palabras sobresalgan
+            };
 
-        const loader = new THREE.FontLoader();
-        loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function(font) {
-            const words = ["WordPress", "SpringBoot", "JavaScript", "HTML", "CSS", "SEO", "MongoDB", "SEM", "Svelte", "Gradle", "Node.js", "Kotlin", "SEO", "SvelteKit", "PostgreSQL"];
-            
-            words.forEach((word, index) => {
-                const textGeometry = new THREE.TextGeometry(word, {
-                    font: font,
-                    ...textOptions
+            const loader = new THREE.FontLoader();
+            loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function(font) {
+                const words = ["WordPress", "Python", "SEM", "HTML", "CSS", "SEO", "MongoDB", "PostgreSQL", "Svelte", "SvelteKit", "Node.js", "Kotlin", "SpringBoot", "Gradle", "JavaScript"];
+                
+                const interval = 1000; // Intervalo de tiempo entre la aparición de palabras (1 segundo)
+
+                words.forEach((word, index) => {
+                    setTimeout(() => {
+                        const textGeometry = new THREE.TextGeometry(word, {
+                            font: font,
+                            ...textOptions
+                        });
+
+                        const textMaterial = new THREE.MeshBasicMaterial({ color: 0xde43ba });
+                        const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+
+                        textMesh.scale.set(1.0, 1.0, 1.0); 
+                        const angle = (Math.PI * 2 * index) / words.length;
+                        const distanceFromCenter = (2 * Math.PI * 11.5) / words.length;
+                        const radius = 7;
+
+                        // Ajusta la posición Z para que las palabras sobresalgan
+                        textMesh.position.set(
+                            Math.cos(angle) * distanceFromCenter,
+                            Math.sin(angle) * distanceFromCenter,
+                            2 + index * 0.2  // Ajusta la posición Z
+                        );
+
+                        scene.add(textMesh);
+                    }, index * interval);
                 });
 
-                // Aplicar material y crear un mesh con textGeometry
-                const textMaterial = new THREE.MeshBasicMaterial({ color: 0xde43ba }); // Color rosa
-                const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+                camera.position.z = 11;
 
-                // Reducir el tamaño de las palabras y ajustar la posición inicial en la esfera
-                textMesh.scale.set(1.0, 1.0, 1.0); 
-                const angle = (Math.PI * 2 * index) / words.length;
-                //const distanceFromCenter = 10; 
-                const distanceFromCenter = 7 + index * 0.2;
-                textMesh.position.set(
-                    Math.cos(angle) * distanceFromCenter,
-                   Math.sin(angle) * distanceFromCenter,
-                    0
-                );
-             
-              
-               
-          
+                function animateSphere() {
+                    sphere.rotation.x += 0.005;
+                    sphere.rotation.y += 0.005;
+                    renderer.render(scene, camera);
+                    requestAnimationFrame(animateSphere);
+                }
 
-                scene.add(textMesh);
-
-                // Animar palabra para moverse desde la esfera hacia su posición
-                const targetPosition = textMesh.position.clone();
-                textMesh.position.set(-1, 0, 0.8); // Inicialmente en el centro de la esfera
-
-                setTimeout(() => {
-                    // Animación para mover la palabra desde el centro hacia su posición
-                    const animationDuration = 1000; // Duración de la animación en milisegundos
-                    const startPosition = new THREE.Vector3(0, 0, 0);
-                    let startTime;
-
-                    function animateWord(timestamp) {
-                        if (!startTime) startTime = timestamp;
-                        const progress = (timestamp - startTime) / animationDuration;
-                        if (progress < 1) {
-                            textMesh.position.lerpVectors(startPosition, targetPosition, progress);
-                            requestAnimationFrame(animateWord);
-                        }
-                    }
-
-                    requestAnimationFrame(animateWord);
-                }, index * 1000); // Retrasar la animación según el índice de la palabra
+                animateSphere();
             });
+        </script>
+    </div>
 
-            // Configuración de la cámara
-            camera.position.z = 15; // Ajusta la posición de la cámara para ver mejor la esfera
-
-            // Animación de la esfera
-            function animateSphere() {
-                sphere.rotation.x += 0.005;
-                sphere.rotation.y += 0.005;
-                renderer.render(scene, camera);
-                requestAnimationFrame(animateSphere);
-            }
-
-            animateSphere();
-        });
-    </script>
-    <style>
-    /* Estilos generales */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background: #de43ba; /* Cambia el color de fondo del body */
-        color: #fff;
-        font-family: 'Playfair Display', serif;
-        display: flex;
-        overflow: hidden;
-    }
-
-    .sobre-mi {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between; /* Añade espacio entre los elementos */
-        align-items: center; /* Centra verticalmente */
-        gap: 2rem;
-        background: var(--second-bg-color);
-    }
-
-    .rotating-sphere {
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
-        margin-left: 150px;
-        background: #de43ba; /* Cambia el color de fondo de la esfera */
-    }
-
-    .labels {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        animation: rotateSphere 10s linear infinite;
-    }
-
-    .label {
-        position: absolute;
-        transform-origin: center;
-        background: rgba(222, 67, 186, 0.5);
-        border: 1px solid #de43ba; /* Cambia el color del borde a rosa */
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 5px 10px;
-        white-space: nowrap;
-        transform: rotateY(calc(var(--rotate) * 1deg)) translateZ(150px);
-    }
-    .text-content {
-        color: #fff; /* Cambia el color del texto a blanco o el color que prefieras */
-    }
-
-    @keyframes rotateSphere {
-        0% { --rotate: 0; }
-        100% { --rotate: 360; }
-    }
-    </style>
+    <div class="about-content">
+        <!-- Tu contenido de texto aquí -->
+    </div>
 </body>
 </html>
+
+
+
+
 
 
 

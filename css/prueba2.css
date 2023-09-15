@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: #111;
+}
+
+.design {
+    position: relative;
+    width: 600px;
+    display: flex;
+    margin-right: auto; /* Alinea la sección a la izquierda */
+    margin-top: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.design .element {
+    position: relative;
+    width: 7.5px; /* Cambia el ancho */
+    height: 7.5px; /* Cambia la altura */
+    background: #333; /* Cambia el color a rojo */
+    border-radius: 50%;
+    margin: 5px;
+}

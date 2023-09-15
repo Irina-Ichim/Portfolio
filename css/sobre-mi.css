@@ -1,79 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-   background: #1f242d;
-   color: #fff;
-    height: 100vh;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    overflow: hidden;
+  background: #1f242d;
+  color: #fff;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  overflow: hidden;
 }
 
-.sobre-mi{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
-    
+.sobre-mi {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color);
+}
+span {
+  color: #de43ba;
 }
 
-
-.about-img img{
-    width: 25vw;
-    border-radius: 50%;
-    margin-left: 150px;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25), 0 20px 20px #de43ba;
-    position: relative;
+.about-img img {
+  width: 25vw;
+  border-radius: 50%;
+  margin-left: 150px;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+    0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25),
+    0 20px 20px #de43ba;
+  position: relative;
 }
-.heading{
-    text-align: center;
-    font-size: 4.5rem;
-
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
 }
-.about-content h2{
-    text-align:start;
-    line-height: 1.2;
-    font-size: 40px;
-    margin-left: 13px;
+.about-content {
+  margin-left: 150px;
+  width: 800px;
 }
-.about-content p{
-    font-size: 1.1rem;
-    margin: 2rem 1rem 3rem;
+.about-content h2 {
+  text-align: start;
+  line-height: 1.2;
+  font-size: 30px;
+  margin-left: 13px;
+}
+.about-content p {
+  font-size: 15px;
+  margin: 2rem 3rem 3rem;
+  text-align: justify;
 }
 @media screen and (max-width: 768px) {
-    .sobre-mi {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center; 
-    }
+  .sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .about-img img {
-        width: 70%; 
-        margin: 20px 0; 
-    }
+  .about-img img {
+    width: 70%;
+    margin: 20px 0;
+  }
 
-    .about-content {
-        padding: 20px; 
-    }
+  .about-content {
+    padding: 20px;
+  }
 
-    .heading {
-        font-size: 2.5rem;
-    }
+  .heading {
+    font-size: 2.5rem;
+  }
 
-    .about-content h2 {
-        text-align: center; 
-        margin-left: 0; 
-    }
+  .about-content h2 {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    .about-content p {
-        font-size: 1rem; 
-        margin: 1rem 0; 
-    }
+  .about-content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+.volver {
+  display: inline-block;
+  background-color: #de43ba;
+  color: #1f242d;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+    0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+    0 4px 4px #de43ba;
+}
+
+.volver:hover {
+  background-color: #1f242d;
+  color: #de43ba;
+}
+
+.hexagon {
+  position: absolute;
+  transition: transform 2s ease-in-out;
+  width: 90px;
+  height: 102px;
+  background-color: transparent;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  border: 2px solid #de43ba;
+  box-sizing: border-box; /* Incluye el borde en el tamaño total */
+
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+    0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25),
+    0 20px 20px #de43ba;
+}
+
+.hexagon:hover {
+  background-color: #de43ba;
 }

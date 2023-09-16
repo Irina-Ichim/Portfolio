@@ -13,10 +13,11 @@
 <body>
     <section class="contact" id="contact">
         <h2 class="heading">¡Contacta <span>Conmigo!</span></h2>
-      <form action="procesar_formulario.php" method="POST" onsubmit="return validarFormulario()">
+        <form action="procesar_formulario.php" method="POST" onsubmit="return validarFormulario()">
                 <div class="input-box">
                     <input type="text" id="nombre" placeholder="Nombre Completo" required/>
                     <input type="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+
                 </div>
                 <div class="input-box">
                     <input type="number" id="telefono" placeholder="Teléfono de contacto" />
@@ -27,8 +28,14 @@
                 <button type="submit" class="button">Enviar Mensaje</button>
         </form>
     </section>
-    <video src="video/fiber_-_121226 (1080p).mp4" autoplay loop muted></video>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>¡Gracias por tu mensaje!</h2>
+            <p>Pronto nos pondremos en contacto contigo.</p>
+        </div>
+    </div>
 
-<script src="formulario.js"></script>
+<script src="../js/formulario.js"></script>
 </body>
 </html>

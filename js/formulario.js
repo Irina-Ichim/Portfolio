@@ -26,6 +26,33 @@ document.getElementById("mensaje").addEventListener("input", function() {
 });
 
 
+    // Obtener el modal y el botón para abrirlo
+    var modal = document.getElementById("myModal");
+    var btn = document.querySelector(".button");
+
+    // Obtener el elemento para cerrar el modal
+    var closeModal = document.getElementById("closeModal");
+
+    // Cuando el usuario haga clic en el botón "Enviar", mostrar el modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Cuando el usuario haga clic en la "x" del modal, ocultar el modal
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Cuando el usuario haga clic en cualquier lugar fuera del modal, ocultar el modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+
+
 
 
 

@@ -1,57 +1,116 @@
-*{
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-   background: #1f242d;
-   color: #fff;
+    background: #1f242d;
+    color: #fff;
     height: 100vh;
     font-family: 'Playfair Display', serif;
-    overflow: hidden;
     padding: 0 2rem;
 }
-.services h2{
-    margin-top: 1.5rem;
-  margin-bottom: 3rem;
-    font-size: 40px;
+
+/* Estilos para la sección de servicios */
+.services {
     text-align: center;
-  
 }
-span{
+
+.heading {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+
+span {
     color: #de43ba;
 }
+
+/* Animación de caída */
+@keyframes caida {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos para los contenedores de servicios */
 .services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
+    cursor: pointer;
 }
-.services-container .services-box{
-    flex: 1 1 20rem;
+
+.services-box {
+    flex: 1 1 calc(25% - 1rem);
     background: #242b38;
     padding: 3rem 3rem 4rem;
     border-radius: 3rem;
     text-align: center;
-    border: .3rem solid #242b38 ;
+    border: .3rem solid #242b38;
+    margin-bottom: 1rem;
+    /* Aplicamos la animación "caida" a los servicios */
+    animation: caida 5s ease forwards; /* Ajusta la duración aquí */
 }
-.services-container .services-box:hover {
+
+.services-box:hover {
     border-color: #de43ba;
     transform: scale(1.02);
-    transition: .5s ease;
 }
 
 .services-box i {
     font-size: 3rem;
     color: #de43ba;
+    background: rgba(222, 67, 186, 0.2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(222, 67, 186, 0.5);
+    margin-bottom: 1rem;
 }
+
 .services-box h3 {
     font-size: 1.3rem;
     margin: 1rem 0 3rem;
+    margin-top: 1rem;
 }
-.services-box p{
+
+.services-box p {
     font-size: 1.05rem;
-   /* margin: 1rem 0 3rem;*/
     text-align: left;
+    margin-top: 1rem;
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.right-align .volver {
+    background-color: #de43ba;
+    color: #1f242d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+      0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+      0 4px 4px #de43ba;
+}
+
+.right-align .volver:hover {
+    background-color: #1f242d;
+    color: #de43ba;
 }

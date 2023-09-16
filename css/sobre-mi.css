@@ -122,11 +122,10 @@ span {
   text-align: center;
   line-height: 2;
   padding: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
-    0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25),
-    0 20px 20px #de43ba;
+
 }
 
 .hexagon:hover {
   background-color: #de43ba;
+ 
 }

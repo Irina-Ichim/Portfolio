@@ -114,3 +114,36 @@ span {
     background-color: #1f242d;
     color: #de43ba;
 }
+
+
+::-webkit-scrollbar {
+    width: 100%;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #de43ba, #890f6c, #ef08b9);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}

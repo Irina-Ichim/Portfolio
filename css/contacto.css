@@ -9,9 +9,8 @@
     background: #1f242d;
     color: #fff;
     font-family: 'Playfair Display', serif;
-    overflow: hidden;
   }
-  
+
   .contact {
     display: flex;
     flex-direction: column;
@@ -24,15 +23,17 @@
   .contact h2.heading {
     margin-bottom: 5rem;
     font-size: 2rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
     z-index: 2;
   }
   
   .contact form {
+    left: -30%;
+    top: 5rem;
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;

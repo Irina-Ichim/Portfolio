@@ -14,20 +14,11 @@ body {
 ::-webkit-scrollbar {
     width: 100%;
 }
-
-#scrollPath {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-}
-
 #progressbar {
     position: fixed;
     top: 0;
     right: 0;
-    width: 10px;
+    width: 5px;
     height: 100%;
     background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
     animation: animate 5s linear infinite;

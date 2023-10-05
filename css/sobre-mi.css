@@ -62,7 +62,7 @@ span {
   }
 
   .about-img img {
-    width: 70%;
+    width: 100%;
     margin: 20px 0;
   }
 
@@ -113,20 +113,16 @@ span {
   height: 102px;
   background-color: transparent;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
   border: 2px solid #de43ba;
-  box-sizing: border-box; /* Incluye el borde en el tamaño total */
-
+  box-sizing: border-box;
   color: #fff;
   font-size: 0.9rem;
   text-align: center;
   line-height: 2;
   padding: 10px;
-
 }
 
 .hexagon:hover {
   background-color: #de43ba;
- 
-}
+ }
 

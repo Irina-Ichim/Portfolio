@@ -4,14 +4,13 @@ hexagons.forEach(hexagon => {
     hexagon.style.position = 'absolute';
     hexagon.style.transition = 'transform 2s ease-in-out';
 
-    // Coordenadas iniciales cerca de la parte izquierda superior de la pantalla
-    const startX = -50; // Coordenada X en el lado izquierdo
-    const startY = -50; // Coordenada Y en la parte superior
+    const startX = -50; 
+    
+    const startY = -50; 
 
     hexagon.style.transform = `translate(${startX}px, ${startY}px)`;
 
     function moveHexagon(hexagon) {
-        // Generar coordenadas aleatorias dentro de un rango limitado
         const newX = Math.random() * (window.innerWidth / 2.5 - 50);
         const newY = Math.random() * (window.innerHeight / 2 - 50);
 

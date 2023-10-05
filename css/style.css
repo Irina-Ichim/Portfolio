@@ -10,6 +10,10 @@ body {
     height: 100vh;
     font-family: 'Playfair Display', serif;
 }
+.logo{
+    width: 190px;
+    height: 150px;
+}
 
 ::-webkit-scrollbar {
     width: 100%;

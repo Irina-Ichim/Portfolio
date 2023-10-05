@@ -16,7 +16,7 @@ body {
 }
 
 .box {
-  top:70px;
+  top: 70px;
   position: relative;
   width: 200px;
   height: 200px;
@@ -26,6 +26,7 @@ body {
   margin-left: 250px;
   animation: rotateGallery 30s linear infinite;
 }
+
 @keyframes rotateGallery {
   from {
     transform: perspective(1000px) rotateY(0deg);
@@ -44,8 +45,7 @@ body {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
-  -webkit-box-reflect: below 0px
-    linear-gradient(transparent, transparent, #0004);
+  -webkit-box-reflect: below 0pxlinear-gradient(transparent, transparent, #0004);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,10 +57,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #eee;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  
 }
 .volver {
- position: fixed;
+  position: fixed;
   top: 20px;
   right: 20px;
   margin: 10px;
@@ -87,11 +86,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
- /* padding: 0 2rem;*/
 }
 
 .contact h2.heading {
- /* margin-bottom: 5rem;*/
   font-size: 2rem;
   margin-top: 9rem;
   position: absolute;

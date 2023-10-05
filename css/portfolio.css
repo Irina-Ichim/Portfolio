@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,15 +7,13 @@ body {
   background: #1f242d;
   color: #fff;
   height: 100vh;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   padding: 0 20px;
-  
 }
 
 .volver {
- display: flex;
+  display: flex;
   justify-content: end;
-  
   background-color: #1f242d;
   color: #de43ba;
   padding: 10px 20px;
@@ -30,45 +28,45 @@ body {
     0 4px 4px #de43ba;
 }
 
-.portfolio h2{
+.portfolio h2 {
   margin-bottom: 4rem;
   margin-top: 3rem;
   font-size: 45px;
   text-align: center;
 }
-span{
+span {
   color: #de43ba;
 }
-.portfolio-container{
+.portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.8rem;
 }
-.portfolio-container .portfolio-box{
+.portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem #de43ba;
   overflow: hidden;
   display: flex;
 }
-.portfolio-box img{
+.portfolio-box img {
   width: 100%;
   height: 300px;
-  transition: .5s ease;
- object-fit:contain;
+  transition: 0.5s ease;
+  object-fit: contain;
 }
 
-.portfolio-box:hover img{
+.portfolio-box:hover img {
   transform: scale(1.1);
 }
-.portfolio-box .portfolio-layer{
+.portfolio-box .portfolio-layer {
   position: absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(rgba(0, 0, 0, .1),#de43ba );
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #de43ba);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,19 +74,19 @@ span{
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
-.portfolio-layer h4{
+.portfolio-layer h4 {
   font-size: 2rem;
 }
-.portfolio-layer p{
+.portfolio-layer p {
   font-size: 1.2rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
-.portfolio-layer a{
+.portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +94,6 @@ span{
   height: 4rem;
   background: #fff;
   border-radius: 50%;
-
 }
 .portfolio-layer a i {
   font-size: 1.5rem;
@@ -120,15 +117,15 @@ span{
 @keyframes animate {
   0%,
   100% {
-      filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   50% {
-      filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
 #progressbar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +136,7 @@ span{
 }
 
 #progressbar::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -148,5 +145,3 @@ span{
   background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
   filter: blur(5px);
 }
-
-  

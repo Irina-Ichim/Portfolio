@@ -98,9 +98,9 @@ span {
 }
 
 .right-align .volver {
-    background-color: #de43ba;
-    color: #1f242d;
-    padding: 10px 20px;
+    background-color: #1f242d;
+    color: #de43ba;
+     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -111,10 +111,9 @@ span {
 }
 
 .right-align .volver:hover {
-    background-color: #1f242d;
-    color: #de43ba;
+    background-color: #de43ba;
+    color: #1f242d;
 }
-
 
 ::-webkit-scrollbar {
     width: 100%;

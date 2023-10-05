@@ -64,8 +64,8 @@ body {
   top: 20px;
   right: 20px;
   margin: 10px;
-  background-color: #de43ba;
-  color: #1f242d;
+  background-color: #1f242d;
+  color: #de43ba;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -77,8 +77,8 @@ body {
 }
 
 .volver:hover {
-  background-color: #1f242d;
-  color: #de43ba;
+  background-color: #de43ba;
+  color: #1f242d;
 }
 
 .contact {

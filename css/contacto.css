@@ -79,6 +79,28 @@ body {
   background-color: #de43ba;
   color: #1f242d;
 }
+.modal-content {
+  margin-top: 90px;
+  width: 360px;
+  height: 120px;
+  background-color: #de43ba; 
+  color: #1f242d;
+  padding: 10px;
+  display: block; 
+}
+.close{
+  color: #1f242d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mensaje-confirmacion {
+  color: #1f242d; 
+  background-color: #de43ba; 
+  padding: 10px;
+  display: block; 
+}
+
 
 .contact {
   display: flex;
@@ -206,4 +228,39 @@ span {
   color: #de43ba;
   padding: 10px;
   text-align: center;
+}
+.modal {
+  display: none;
+}
+
+.modal-content {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f242d;
+  color: #de43ba;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.custom-alert-content {
+  position: relative;
+}
+
+.custom-alert .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }

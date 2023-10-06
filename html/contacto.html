@@ -14,13 +14,7 @@
     <link rel="stylesheet" href="../css/contacto.css" />
   </head>
   <body>
-    <!-- <div class="modal" id="myModal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>¡Gracias por tu mensaje!</h2>
-            <p>Pronto nos pondremos en contacto contigo.</p>
-        </div>
-    </div>-->
+   
     <a href="../html/index.html" class="volver">Volver</a>
 
     <section class="container">
@@ -72,6 +66,7 @@
             id="nombre"
             placeholder="Nombre Completo"
             required
+            pattern="[A-Za-z]+"
           />
           <input
             type="email"
@@ -81,13 +76,23 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
         </div>
+        <div id="mensaje-telefono-error" class="error"></div>
+
         <div class="input-box">
           <input
-            type="number"
+            type="tel"
             id="telefono"
             placeholder="Teléfono de contacto"
+            pattern="[0-9]{9,}"
+            oninput="validarTelefono()"
           />
-          <input type="text" id="asunto" placeholder="Asunto" />
+          <input
+            type="text"
+            id="asunto"
+            placeholder="Asunto"
+            oninput="validarAsunto()"
+          />
+          <div id="mensaje-asunto-error" class="error"></div>
         </div>
         <textarea
           id="mensaje"
@@ -97,8 +102,23 @@
           placeholder="Tu mensaje"
         ></textarea>
         <div id="mensaje-error" class="error"></div>
-        <button type="submit" class="button">Enviar Mensaje</button>
+        <button type="button" onclick="enviarFormulario()">Enviar Formulario</button>
       </form>
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="mensaje-confirmacion">¡Gracias por tu mensaje!</h2>
+            <p id="texto-confirmacion">Pronto nos pondremos en contacto contigo.</p>
+            
+        </div>
+      </div>
+      
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close" onclick="cerrarAlerta()">&times;</span>
+            <p id="alert-message"></p>
+        </div>
+    </div>
     </section>
 
     <script src="../js/formulario.js"></script>

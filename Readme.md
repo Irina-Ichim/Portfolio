@@ -1,15 +1,13 @@
 # [Portfolio de Irina Ichim](http://www.irina-ichim.com/portfolio.html) 🌐
 
-¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
-
+¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades. 
 <a href="https://www.linkedin.com/in/irina-ichim-desarolladora/" target="_blank">
-  <img src="img/logoLinkedin.png" alt="LinkedIn" width="30">
+<img src="img/logoLinkedin.png" alt="LinkedIn" width="30">
 </a>
 
 <a href="https://github.com/Irina-Ichim" target="_blank">
   <img src="img/logogithub.jpg" alt="GitHub" width="30">
 </a>
-
 
 ## Acerca de mí 👱‍♀️ 💻
 

@@ -13,7 +13,7 @@ Soy una apasionada desarrolladora Full-Stack con experiencia en diversas tecnolo
 
 ## Visualización del proyecto
 
-![Vista Previa del Portfolio](./img/IrinaIchim_portada.jpg)
+![Vista Previa del Portfolio](/img/ImgPortfolio.png)
 
 ## Proyectos Destacados
 

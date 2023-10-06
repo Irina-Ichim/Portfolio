@@ -83,24 +83,23 @@ body {
   margin-top: 90px;
   width: 360px;
   height: 120px;
-  background-color: #de43ba; 
+  background-color: #de43ba;
   color: #1f242d;
   padding: 10px;
-  display: block; 
+  display: block;
 }
-.close{
+.close {
   color: #1f242d;
-  font-weight: bold;
+  font-weight: bolder;
   cursor: pointer;
 }
 
 #mensaje-confirmacion {
-  color: #1f242d; 
-  background-color: #de43ba; 
+  color: #1f242d;
+  background-color: #de43ba;
   padding: 10px;
-  display: block; 
+  display: block;
 }
-
 
 .contact {
   display: flex;
@@ -234,7 +233,6 @@ span {
 }
 
 .modal-content {
-  
   padding: 20px;
   text-align: center;
 }

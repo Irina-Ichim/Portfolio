@@ -2,19 +2,18 @@
 
 ¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
 
+[![LinkedIn](img/logoLinkedin.png)](https://www.linkedin.com/in/irina-ichim-desarolladora/) [![GitHub](img/logogithub.jpg)](https://github.com/Irina-Ichim)
 
-[![LinkedIn](https://www.linkedin.com/in/irina-ichim-desarolladora/)](https://www.linkedin.com/in/irina-ichim-desarolladora/) [![GitHub](https://github.com/Irina-Ichim)](https://github.com/Irina-Ichim)
-
-## Acerca de mí
+## Acerca de mí 👱‍♀️ 💻
 
 Soy una apasionada desarrolladora Full-Stack con experiencia en diversas tecnologías. Mi conjunto de habilidades incluye:
 
 - **Frontend:** HTML, CSS, Svelte, Svelte Kit
-- **Backend:** Python, Kotlin, Spring Boot
-- **Bases de Datos:** PostgreSQL, MongoDB
+- **Backend:** Python 🐍, Kotlin, Spring Boot🍃
+- **Bases de Datos:** PostgreSQL 🐘, MongoDB
 - **Herramientas y Otros:** Node.js, Gradle, WordPress, SEO, SEM
 
-## Visualización del proyecto
+## Visualización del proyecto📸
 
 ![Vista Previa del Portfolio](/img/ImgPortfolio.png)
 
@@ -22,11 +21,11 @@ Soy una apasionada desarrolladora Full-Stack con experiencia en diversas tecnolo
 
 En el apartado de [Portfolio](http://www.irina-ichim.com/portfolio.html) encontrarás varios proyectos creados con las tecnologías mencionadas. Cada proyecto tiene su propia historia y desafíos superados. ¡Échales un vistazo!
 
-## Estilo y Diseño
+## Estilo y Diseño ✨🎨
 
 A continuación, describo algunas de las características destacadas del diseño de mi portfolio:
 
-- <span style="color:#de43ba;">**Barra de Progreso Animada:**</span> Añadí una barra de progreso animada que proporciona información visual y un toque moderno a la página.
+- **Barra de Progreso Animada:** Añadí una barra de progreso animada que proporciona información visual y un toque moderno a la página.
 
 - **Animación de Imágenes:** En la sección "Acerca de Mí", encontrarás una animación de imagen que resalta mi fotografía, agregando dinamismo a la presentación.
 
@@ -42,6 +41,5 @@ A continuación, describo algunas de las características destacadas del diseño
 
 ## Contribuir
 
-¡Estoy siempre abierta a colaboraciones y sugerencias! Si tienes alguna idea o mejora para mi portfolio, no dudes en abrir un issue o una solicitud de pull.
-
-Espero que disfrutes explorando mi portfolio. ¡Gracias por tu visita!
+¡Estoy siempre abierta a colaboraciones y sugerencias! Si tienes alguna idea o mejora para mi portfolio, no dudes en abrir un issue o una solicitud de pull.🤝
+Espero que disfrutes explorando mi portfolio. ¡Gracias por tu visita! 👩‍💻

@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
 
-[![LinkedIn](img/logoLinkedin.png)](https://www.linkedin.com/in/irina-ichim-desarolladora/) [![GitHub](img/logogithub.jpg)](https://github.com/Irina-Ichim)
+[![LinkedIn](img/logoLinkedin.png widt="30")](https://www.linkedin.com/in/irina-ichim-desarolladora/) [![GitHub](img/logogithub.jpg width= "30")](https://github.com/Irina-Ichim)
 
 ## Acerca de mí 👱‍♀️ 💻
 

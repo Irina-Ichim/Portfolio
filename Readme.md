@@ -1,4 +1,4 @@
-# Portfolio de Irina Ichim
+# Portfolio de Irina Ichim(http://www.irina-ichim.com/portfolio.html)
 
 ¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
 
@@ -13,7 +13,7 @@ Soy una apasionada desarrolladora Full-Stack con experiencia en diversas tecnolo
 
 ## Proyectos Destacados
 
-En el apartado de [Portfolio](https://github.com/Irina-Ichim/Portfolio) encontrarás varios proyectos creados con las tecnologías mencionadas. Cada proyecto tiene su propia historia y desafíos superados. ¡Échales un vistazo!
+En el apartado de [Portfolio](http://www.irina-ichim.com/portfolio.html) encontrarás varios proyectos creados con las tecnologías mencionadas. Cada proyecto tiene su propia historia y desafíos superados. ¡Échales un vistazo!
 
 ## Estilo y Diseño
 

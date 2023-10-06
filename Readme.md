@@ -1,4 +1,4 @@
-# Portfolio de Irina Ichim(http://www.irina-ichim.com/portfolio.html)
+# [Portfolio de Irina Ichim](http://www.irina-ichim.com/portfolio.html)
 
 ¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
 
@@ -10,6 +10,10 @@ Soy una apasionada desarrolladora Full-Stack con experiencia en diversas tecnolo
 - **Backend:** Python, Kotlin, Spring Boot
 - **Bases de Datos:** PostgreSQL, MongoDB
 - **Herramientas y Otros:** Node.js, Gradle, WordPress, SEO, SEM
+
+## Visualización del proyecto
+
+![Vista Previa del Portfolio](./img/IrinaIchim_portada.jpg)
 
 ## Proyectos Destacados
 

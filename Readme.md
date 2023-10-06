@@ -1,6 +1,9 @@
-# [Portfolio de Irina Ichim](http://www.irina-ichim.com/portfolio.html)
+# [Portfolio de Irina Ichim](http://www.irina-ichim.com/portfolio.html) 🌐
 
 ¡Bienvenido a mi portfolio! Aquí encontrarás información sobre mi experiencia, proyectos y habilidades.
+
+
+[![LinkedIn](https://www.linkedin.com/in/irina-ichim-desarolladora/)](https://www.linkedin.com/in/irina-ichim-desarolladora/) [![GitHub](https://github.com/Irina-Ichim)](https://github.com/Irina-Ichim)
 
 ## Acerca de mí
 
@@ -23,7 +26,7 @@ En el apartado de [Portfolio](http://www.irina-ichim.com/portfolio.html) encontr
 
 A continuación, describo algunas de las características destacadas del diseño de mi portfolio:
 
-- **Barra de Progreso Animada:** Añadí una barra de progreso animada que proporciona información visual y un toque moderno a la página.
+- <span style="color:#de43ba;">**Barra de Progreso Animada:**</span> Añadí una barra de progreso animada que proporciona información visual y un toque moderno a la página.
 
 - **Animación de Imágenes:** En la sección "Acerca de Mí", encontrarás una animación de imagen que resalta mi fotografía, agregando dinamismo a la presentación.
 

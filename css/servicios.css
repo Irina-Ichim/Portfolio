@@ -20,6 +20,9 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   font-size: 35px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+  0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+  0 4px 4px #de43ba;
 }
 
 span {
@@ -47,13 +50,14 @@ span {
 }
 
 .services-box {
-  flex: 1 1 calc(15% - 1rem);
+  flex: 1 1 calc(15% - 2rem);
+  height:530px;
   background: #242b38;
-  padding: 3rem 3rem 4rem;
+  padding: 3rem 3rem 3rem;
   border-radius: 3rem;
   text-align: center;
   border: 0.3rem solid #242b38;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   animation: caida 5s ease forwards;
 }
 
@@ -63,7 +67,7 @@ span {
 }
 
 .services-box i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #de43ba;
   background: rgba(222, 67, 186, 0.2);
   padding: 0.5rem;
@@ -76,6 +80,9 @@ span {
   font-size: 1.3rem;
   margin: 1rem 0 3rem;
   margin-top: 1rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+  0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+  0 4px 4px #de43ba;
 }
 
 .services-box p {

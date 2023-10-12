@@ -107,13 +107,14 @@ body {
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 0.7s;
+  
 }
 .inicio-contenido h3:nth-of-type(2) {
   margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.7s;
 }
-.inicio-contenido h3 span {
+span {
   color: #de43ba;
 }
 .inicio-contenido h1 {
@@ -123,6 +124,9 @@ body {
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+  0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+  0 4px 4px #de43ba;
 }
 .inicio-contenido p {
   font-size: 16px;

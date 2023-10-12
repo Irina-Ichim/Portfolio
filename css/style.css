@@ -11,8 +11,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 .logo {
-  width: 100px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 ::-webkit-scrollbar {
@@ -249,14 +251,43 @@ span {
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
-    padding: 10px;
+  .logo{
+    display:none;
   }
-
-  .navbar {
-    flex-direction: column;
-    align-items: center;
+  .header{
+    position: relative;
   }
-
-  
+  .navbar a{
+    padding: 6px;
+    margin-left: -10px;
+  }
+  .inicio-contenido {
+    max-width: 400px;
+  }
+  .inicio-contenido h3{
+    font-size: 15px;
+   
+  }
+  .inicio-contenido h1{
+    font-size: 25px;
+   
+  }
+  .inicio-img img{
+    max-width: 35%;
+    position: absolute;
+    left: 30%;
+    top: 2%;
+    transform: translate(-50%, -50%);
+  }
+  .inicio-contenido p{
+    font-size: 12px;
+  }
+  .social-media a {
+    width: 20px;
+    height: 20px;
+  }
+  .btn{
+    font-size: 10px;
+    padding: 6px 14px;
+  }
 }

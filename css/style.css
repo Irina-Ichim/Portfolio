@@ -6,13 +6,13 @@
 
 body {
   background: #1f242d;
-  color: #fff;
+  color: #ccc;
   height: 100vh;
   font-family: "Playfair Display", serif;
 }
 .logo {
-  width: 190px;
-  height: 150px;
+  width: 100px;
+  height: 70px;
 }
 
 ::-webkit-scrollbar {
@@ -72,19 +72,11 @@ body {
   align-items: center;
   z-index: 100;
 }
-.logo {
-  font-size: 25px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: default;
-  opacity: 0;
-  animation: slideRight 1s ease forwards;
-}
+
 .navbar a {
   display: inline-block;
   font-size: 18px;
-  color: #fff;
+  color: #ccc;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -262,7 +254,5 @@ body {
     align-items: center;
   }
 
-  .logo {
-    font-size: 20px;
-  }
+  
 }

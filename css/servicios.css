@@ -6,7 +6,7 @@
 
 body {
   background: #1f242d;
-  color: #fff;
+  color: #ccc;
   height: 100vh;
   font-family: "Playfair Display", serif;
   padding: 0 2rem;
@@ -19,7 +19,7 @@ body {
 .heading {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 span {
@@ -47,7 +47,7 @@ span {
 }
 
 .services-box {
-  flex: 1 1 calc(25% - 1rem);
+  flex: 1 1 calc(15% - 1rem);
   background: #242b38;
   padding: 3rem 3rem 4rem;
   border-radius: 3rem;

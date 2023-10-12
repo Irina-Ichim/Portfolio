@@ -109,37 +109,6 @@ article{
 }
 
 
-@media screen and (max-width: 768px) {
-  .sobre-mi {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-img img {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .about-content {
-    padding: 20px;
-  }
-
-  .heading {
-    font-size: 2.5rem;
-  }
-
-  .about-content h2 {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .about-content p {
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-}
-
 .volver {
   display: inline-block;
   background-color: #de43ba;
@@ -179,4 +148,33 @@ article{
 
 .hexagon:hover {
   background-color: #de43ba;
+}
+
+@media screen and (max-width: 768px){
+  .sobre-mi{
+    margin-top: 65%;
+  }
+  .about-img img{
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 40%;
+    width: 40%;
+  }
+  .about-content{
+    margin-left: -30px;
+    width: 400px;
+  }
+
+.hexagon{
+  width: 45px;
+  height: 51px;
+  font-size: 0.5rem;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+article{
+  margin-left: -20px;
+  margin-right: 30%;
+}
 }

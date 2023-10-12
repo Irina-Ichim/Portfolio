@@ -291,3 +291,12 @@ span {
     padding: 6px 14px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .inicio-img img{
+    left:12%;
+    max-width: 95%;
+  }
+  .logo{
+    display: none;
+  }
+}

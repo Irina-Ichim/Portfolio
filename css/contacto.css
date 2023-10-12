@@ -262,3 +262,70 @@ span {
   cursor: pointer;
   font-size: 20px;
 }
+@media screen and (max-width: 768px){
+  .box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:15%;
+    right: 20%;
+  }
+  .box .card{
+    font-size: 10px;
+  }
+  .container{
+    margin-left: 50px;
+  }
+  .contact{
+    margin-top: 60%;
+    justify-content: left;
+    margin-right: 9%;
+
+  }
+  .contact h2.heading{
+    margin-top: 80%;
+    font-size: 18px;
+  }
+  form{
+    width: 350px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .box{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top:15%;
+    right: 40%;
+  }
+  .box .card{
+    font-size: 15px;
+  }
+  .contact{
+    margin-top: 60%;
+    justify-content: left;
+    margin-right: 7%;
+
+  }
+  .contact h2.heading{
+    margin-top: 70%;
+  }
+}
+@media screen and (min-width: 1025px){
+  .box{
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top:60%;
+  right: 65%;
+}
+.contact{
+  justify-content: flex-end;
+  margin:-50px;
+}
+.contact h2.heading{
+  margin-top: 20%;
+}
+}
+

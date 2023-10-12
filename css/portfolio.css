@@ -148,3 +148,25 @@ span {
   background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
   filter: blur(5px);
 }
+@media screen and (max-width: 768px){
+  .portfolio-layer{
+    margin-left: -20px;
+  }
+  .portfolio-layer h4{
+    font-size: 0.8rem;
+  }
+  .portfolio-layer p{
+    font-size: 0.6rem;
+    text-align: left;
+  }
+  .portfolio-layer a{
+    font-size: 0.2rem;
+    border-radius: 20%;
+    width: 20px;
+    height: 20px;
+  }
+  .portfolio-layer a i{
+    font-size: 0.2rem;
+
+  }
+}

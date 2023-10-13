@@ -11,8 +11,8 @@ body {
   font-family: "Playfair Display", serif;
 }
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -138,7 +138,7 @@ span {
   text-align: justify;
 }
 .inicio-img img {
-  max-width: 370px;
+  width: 360px;
   border-radius: 50%;
   margin-right: -20px;
   opacity: 0;
@@ -300,3 +300,14 @@ span {
     display: none;
   }
 }
+@media screen and (min-width: 1025px){
+  .inicio-img img{
+    max-width: 30%;
+    position: absolute;
+    left: 66%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+  
+

@@ -1,33 +1,29 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $telefono = $_POST["telefono"];
     $asunto = $_POST["asunto"];
     $mensaje = $_POST["mensaje"];
-    
-    $destino = $_POST["destino"] ?? "correo@example.com";
 
+    // Configurar el correo electrónico
+    $destinatario = "admin@irina-ichim.com";
+    $asuntoCorreo = "Nuevo mensaje de contacto desde el sitio web";
     $mensajeCorreo = "Nombre: $nombre\n";
     $mensajeCorreo .= "Email: $email\n";
     $mensajeCorreo .= "Teléfono: $telefono\n";
     $mensajeCorreo .= "Asunto: $asunto\n";
     $mensajeCorreo .= "Mensaje:\n$mensaje";
 
-    $asuntoCorreo = "Nuevo mensaje del formulario";
+    // Enviar el correo electrónico
+    mail($destinatario, $asuntoCorreo, $mensajeCorreo);
 
-    $enviado = mail($destino, $asuntoCorreo, $mensajeCorreo);
-
-    if ($enviado) {
-        echo "Mensaje enviado correctamente";
-    } else {
-        echo "Error al enviar el correo: " . error_get_last()['message'];
-    }
+    // Redirigir de vuelta al formulario con un mensaje de éxito
+    header("Location: index.html?enviado=1");
 } else {
-    echo "Acceso no autorizado";
+    // Si no se accede mediante POST, redirigir a la página de inicio
+    header("Location: index.html");
 }
 ?>
+
 

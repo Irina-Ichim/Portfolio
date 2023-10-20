@@ -55,11 +55,8 @@
 
     <section class="contact" id="contact">
       <h2 class="heading">¡Contacta <span>Conmigo!</span></h2>
-      <form
-        action="procesar_formulario.php"
-        method="POST"
-        onsubmit="return validarFormulario()"
-      >
+      <form action="html/procesar_formulario.php" method="POST" onsubmit="return validarFormulario()">
+
         <div class="input-box">
           <input
             type="text"
@@ -68,14 +65,14 @@
             required
             pattern="[A-Za-z]+"
           />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-        </div>
+             <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+          pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+        />
+            </div>
         <div id="mensaje-telefono-error" class="error"></div>
 
         <div class="input-box">

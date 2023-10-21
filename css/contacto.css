@@ -16,7 +16,7 @@ body {
 }
 
 .box {
-  top: 70px;
+  top: 20px;
   position: relative;
   width: 200px;
   height: 200px;
@@ -79,28 +79,6 @@ body {
   background-color: #de43ba;
   color: #1f242d;
 }
-.modal-content {
-  margin-top: 90px;
-  width: 360px;
-  height: 120px;
-  background-color: #de43ba;
-  color: #1f242d;
-  padding: 10px;
-  display: block;
-}
-.close {
-  color: #1f242d;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-#mensaje-confirmacion {
-  color: #1f242d;
-  background-color: #de43ba;
-  padding: 10px;
-  display: block;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -108,160 +86,56 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
-.contact h2.heading {
-  font-size: 1.8rem;
-  margin-top: 9rem;
-  position: absolute;
+.formulario-jotform{
+  width:600px;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+::-webkit-scrollbar {
+  width: 100%;
+}
+#progressbar {
+  position: fixed;
   top: 0;
-  transform: translateX(-22%);
-  z-index: 2;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
+  animation: animate 5s linear infinite;
 }
 
-.contact form {
-  right:13%;
-  top: 7rem;
-  max-width: 60rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 2;
-}
-
-span {
-  color: #de43ba;
-}
-
-.contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-  font-size: 1.2rem;
-  color: #eee;
-  background: #292f3a;
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
-  position: relative;
-  border: 2px solid #292f3a;
-}
-
-.contact form .input-box input::before,
-.contact form textarea::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  top: -2px;
-  z-index: -1;
-  background: linear-gradient(45deg, #45f3ff, #ff2770);
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.4s ease-in-out;
-}
-
-.contact form .input-box input:focus::before,
-.contact form textarea:focus::before {
-  transform: scaleX(1);
-}
-
-.contact form .input-box input:focus,
-.contact form textarea:focus {
-  border-color: #de43ba;
-  box-shadow: 0 0 10px #de43ba;
-  outline: none;
-}
-
-.contact form .input-box input {
-  width: 49%;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form button {
-  display: block;
-  margin: 1rem auto;
-  cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    #de43ba,
-    #f441a5 30%,
-    #6b0554 60%,
-    #de43ba
-  );
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.8rem 1.6rem;
-  border: none;
-  border-radius: 0.8rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact form button:hover {
-  background-size: 400%;
-  color: #de43ba;
-  animation: gradient 1.5s ease-in-out infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
   }
   50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
+    filter: hue-rotate(360deg);
   }
 }
 
-.error {
-  background-color: #1f242d;
-  color: #de43ba;
-  padding: 10px;
-  text-align: center;
-}
-.modal {
-  display: none;
-}
-
-.modal-content {
-  padding: 20px;
-  text-align: center;
-}
-
-.custom-alert {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #1f242d;
-  color: #de43ba;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-.custom-alert-content {
-  position: relative;
-}
-
-.custom-alert .close {
+#progressbar::before {
+  content: "";
   position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
+  filter: blur(5px);
 }
+
+#progressbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #de43ba, #de43ba, #de43ba);
+  filter: blur(5px);
+}
+
 @media screen and (max-width: 768px){
   .box{
     width: 100px;

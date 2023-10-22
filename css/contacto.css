@@ -87,9 +87,9 @@ body {
   height: 100vh;
 }
 .formulario-jotform{
-  width:600px;
-  margin-top: 80px;
+ margin-top: 80px;
   margin-left: 50px;
+  width: 600px;
 }
 ::-webkit-scrollbar {
   width: 100%;
@@ -141,28 +141,17 @@ body {
     width: 100px;
     height: 100px;
     position: absolute;
-    top:15%;
-    right: 20%;
+    top:9%;
+    right: 40%;
   }
   .box .card{
     font-size: 10px;
   }
   .container{
-    margin-left: 50px;
+    margin-left:-50px;
   }
-  .contact{
-    margin-top: 60%;
-    justify-content: left;
-    margin-right: 9%;
-
-  }
-  .contact h2.heading{
-    margin-top: 80%;
-    font-size: 18px;
-  }
-  form{
-    width: 350px;
-    height: 300px;
+  .formulario-jotform{
+    margin-top: 36%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -176,14 +165,8 @@ body {
   .box .card{
     font-size: 15px;
   }
-  .contact{
-    margin-top: 60%;
-    justify-content: left;
-    margin-right: 7%;
-
-  }
-  .contact h2.heading{
-    margin-top: 70%;
+  .formulario-jotform{
+    margin-top: 38%;
   }
 }
 
